@@ -2,14 +2,25 @@ html, body {
     margin: 0;
     padding: 0;
     outline: none;
+    background-color: #F6F6F6;
 }
 
 ul, li {
     list-style-type: none; 
+    padding-left: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+h4 {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
 }
 
 body {
@@ -21,8 +32,8 @@ body {
 }
 
 header {
-    display: flex;
     position: relative;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -31,9 +42,11 @@ header {
     max-width: 1920px;
 }
 
-header nav {
+header nav {  
     width: 100%;
     height: 50px;
+    display: flex;
+    align-items: center;
     background: #F0F0F0;
     border-radius: 20px;
     margin-top: 22px;
@@ -43,9 +56,9 @@ header nav {
 
 header nav ul {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     padding: 0;
 }
 
@@ -54,7 +67,17 @@ header nav ul li a {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    line-height: 24px;
     color: #2F2626;
+}
+
+header nav ul li a:hover {
+    display: block;
+    padding:0 14px;
+    margin: 0 -14px;
+    border-radius: 4px;
+    background: #5C3D2C;
+    color: #FFFFFF;
 }
 
 header h1 {
@@ -82,15 +105,15 @@ header h2 {
 
 main .about_section .cloud_wrapper {
     position: relative;
-    width: 100%;
     background: #2F2626;
     border-radius: 20px;
     padding: 26px;
+    margin-bottom: 46px;
 }
 main .about_section .cloud_wrapper::after {
     position: absolute;
     bottom: -38px;
-    left: 8%;
+    left: 3.5em;
     border: 16px solid transparent;
     border-top: 24px solid #2F2626;
     content: '';
@@ -105,4 +128,78 @@ main .about_section .cloud_wrapper span {
     line-height: 44px;
     padding-left: 26px;
     color: #FFFFFF;
+}
+
+main .about_with_avatar {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .about_with_avatar .avatar_wrapper {
+    margin-right: 2.5em;
+}
+
+main .about_with_avatar .avatar_wrapper img {
+    object-fit: cover;
+    width: 134px;
+    height: 134px;
+    border-radius: 100%;
+    border: 3px solid #E6E6E6;
+}
+
+.standart_block {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    margin-bottom: 46px;
+}
+
+.standart_block h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+.standart_block p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: #000000;
+}
+
+.standart_block .education_items_wrapper {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 14px;
+}
+
+.education_items_wrapper .education_item {
+    display: flex; 
+    width: 50%;
+    max-width: 600px;
+}
+
+.education_item .description_item {
+    padding: 14px 20px;
+}
+
+.education_item .description_item p, 
+.education_item .description_item ul li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+.education_item .description_item ul li::before {
+    content: '- '
 }
