@@ -84,10 +84,11 @@
                         <div class="description_item">
                             <h4>State Mechanical And Technological College, Bobruisk</h4>
                             <p>
-                                Machinery and apparatus for chemical production and building materials (technician-mechanic)
+                                Machinery and apparatus for chemical production and building materials
+                                (technician-mechanic)
                             </p>
                         </div>
-                    </div> 
+                    </div>
                     <div class="education_item">
                         <div class="icon_wrapper">
                             <img src="img/icons/academic.svg" width="80" height="80" alt="University">
@@ -111,7 +112,7 @@
                                 <li>The Modern JavaScript Tutorial (learn.javascript.ru)</li>
                             </ul>
                         </div>
-                    </div> 
+                    </div>
                     <div class="education_item">
                         <div class="icon_wrapper">
                             <img src="img/icons/courses.svg" width="80" height="80" alt="Courses">
@@ -180,6 +181,66 @@
                 </section>
             </div>
         </div>
+        <section class="examples">
+            <h3>Examples</h3>
+            <div class="standart_block">
+                <div class="left_block">
+                    <h4>Task</h4>
+                    
+                    <p>Trolls are attacking your comment section!</p>
+                    <p> A common way to deal with this situation is to remove all of the vowels from the trolls’ comments, neutralizing the threat.</p>
+                    <p>Your task is to write a function that takes a string and return a new string with all vowels
+                        removed.</p>
+                    <p>For example, the string “This website is for losers LOL!” would become “Ths wbst s fr lsrs LL!”.</p>
+                    
+                </div>
+                <div class="right_block">
+                    <h4>My solution</h4>
+                    <code>
+                        <pre>
+const disemvowel = (str) => { 
+    const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']; 
+            return str.split('').reduce((newStr, item) => { 
+                return newStr += vowels.every(vowel => 
+    vowel !== item) ? item : '' }, '');
+}                             
+                        </pre>
+                    </code>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <h3>Projects</h3>
+            <div class="standart_block">
+                <div class="item_project">
+                    <div class="img_project">
+                        <img src="img/projects/sortcalc.png" alt="SortCalc Project" width="340" height="200">
+                    </div>
+                    <a href="/" class="title_project">
+                        <strong>SortCalc</strong>
+                        <p>(rolled metal calculator)</p>
+                    </a>
+                </div>
+                <div class="item_project">
+                    <div class="img_project">
+                        <img src="img/projects/fooddelivery.png" alt="Food-Delivery" width="340" height="200">
+                    </div>
+                    <a href="/" class="title_project">
+                        <strong>Food-delivery</strong>
+                        <p>(project for learning ReactJs)</p>
+                    </a>
+                </div>
+                <div class="item_project">
+                    <div class="img_project">
+                        <img src="img/projects/snake.png" alt="Snake" width="340" height="200">
+                    </div>
+                    <a href="/" class="title_project">
+                        <strong>Snakey</strong>
+                        <p>(simple game on native JS)</p>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
     </footer>

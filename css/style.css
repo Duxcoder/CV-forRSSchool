@@ -220,6 +220,9 @@ main .about_with_avatar .avatar_wrapper img {
     justify-content: space-between;
 }
 
+.contacts_and_skills ul {
+    margin-top: 24px
+}
 .contacts_and_skills .contacts {
     width: 25%;
     
@@ -300,6 +303,102 @@ main .about_with_avatar .avatar_wrapper img {
 
 .contacts_and_skills .skills {
     width: 40%;
-
 }
 
+.examples .standart_block {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+
+h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    padding-left: 30px;
+}
+
+.examples h4 {
+    text-align: center;
+}
+
+.examples .left_block {
+    display: block;
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    border-radius: 20px 0 0 20px;
+    background-color: #FFFFFF;
+}
+
+.examples .right_block {
+    display: block;
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    border-radius: 0 20px 20px 0;
+    background-color: #2F2626;
+}
+
+.examples .right_block h4 {
+    color: #F69C6A;
+}
+
+.examples .right_block ::selection {
+    background-color: #6d371b;
+}
+
+.examples .right_block code pre{
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: #FDF4D5;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.projects .standart_block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project .item_project {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.item_project .title_project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.title_project strong {
+    font-weight: 500;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.title_project p {
+    margin-top: 0;
+    font-weight: 400;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
