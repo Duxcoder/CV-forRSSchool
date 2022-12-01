@@ -8,6 +8,11 @@ html, body {
 ul, li {
     list-style-type: none; 
     padding-left: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
 }
 
 a {
@@ -23,12 +28,17 @@ h4 {
     color: #000000;
 }
 
+address {
+    display: inline;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 16%;
     margin-right: 16%;
+
 }
 
 header {
@@ -110,6 +120,7 @@ main .about_section .cloud_wrapper {
     padding: 26px;
     margin-bottom: 46px;
 }
+
 main .about_section .cloud_wrapper::after {
     position: absolute;
     bottom: -38px;
@@ -203,3 +214,92 @@ main .about_with_avatar .avatar_wrapper img {
 .education_item .description_item ul li::before {
     content: '- '
 }
+
+.contacts_and_skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts_and_skills .contacts {
+    width: 25%;
+    
+}
+
+.contacts_and_skills .middle_wrapper {
+    width: 35%;
+    display: flex;
+    align-items:flex-end;
+    --rounded: 20px;
+}
+
+.contacts_and_skills .middle_wrapper .middle_background {
+    position: relative;
+    width: 336px;
+    height: 168px;
+    border-radius: 120px 60px 0px 0px;
+    background: #F7F7F7;
+    margin-bottom: -30px;
+}
+
+.contacts_and_skills .middle_wrapper .middle_background::before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: calc(var(--rounded) - (var(--rounded) * 2));
+    content: '';
+    width: var(--rounded);
+    height: var(--rounded);
+    background-color: #ffffff;
+    border-radius: 0 0 var(--rounded) 0;
+    z-index: 2;
+}
+
+.contacts_and_skills .middle_wrapper .middle_background::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: calc(var(--rounded) - (var(--rounded) * 2));
+    content: '';
+    width: var(--rounded);
+    height: var(--rounded);
+    background-color: #ffffff;
+    border-radius: 0 0 0 var(--rounded);
+    z-index: 2;
+}
+
+.contacts_and_skills .middle_wrapper .middle_background img {
+   position: relative;
+   margin-top: -30px;
+}
+
+.contacts_and_skills .middle_wrapper .middle_background .rounded::before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: calc(var(--rounded) - (var(--rounded) * 2));
+    content: '';
+    width: var(--rounded);
+    height: var(--rounded);
+    background-color: #F6F6F6;
+    border-radius: var(--rounded) 0 0 0;
+    z-index: 1;
+ }
+
+ .contacts_and_skills .middle_wrapper .middle_background .rounded::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: calc(var(--rounded) - (var(--rounded) * 2));
+    content: '';
+    width: var(--rounded);
+    height: var(--rounded);
+    background-color: #F6F6F6;
+    border-radius: 0 var(--rounded) 0 0;
+    z-index: 1;
+ }
+
+.contacts_and_skills .skills {
+    width: 40%;
+
+}
+
