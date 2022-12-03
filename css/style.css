@@ -2,7 +2,11 @@ html, body {
     margin: 0;
     padding: 0;
     outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
     background-color: #F6F6F6;
+    
 }
 
 ul, li {
@@ -17,6 +21,7 @@ ul, li {
 
 a {
     text-decoration: none;
+    color: #035d78;
 }
 
 h4 {
@@ -30,6 +35,8 @@ h4 {
 
 address {
     display: inline;
+    font-style: normal;
+    font-weight: 300;
 }
 
 body {
@@ -124,7 +131,7 @@ main .about_section .cloud_wrapper {
 main .about_section .cloud_wrapper::after {
     position: absolute;
     bottom: -38px;
-    left: 3.5em;
+    left: 3.3rem;
     border: 16px solid transparent;
     border-top: 24px solid #2F2626;
     content: '';
@@ -144,10 +151,16 @@ main .about_section .cloud_wrapper span {
 main .about_with_avatar {
     display: flex;
     justify-content: space-between;
+    line-height: 24px;
+    text-align: justify;
 }
 
 main .about_with_avatar .avatar_wrapper {
     margin-right: 2.5em;
+    text-align: center;
+    font-family: 'Roboto Mono';
+    font-size: 14px;
+    color: #8b8080;
 }
 
 main .about_with_avatar .avatar_wrapper img {
@@ -155,14 +168,21 @@ main .about_with_avatar .avatar_wrapper img {
     width: 134px;
     height: 134px;
     border-radius: 100%;
-    border: 3px solid #E6E6E6;
+    border: 2px solid #f6f6f6;
+    box-shadow: 0px 0px 0px 3px #cccccc;
+}
+
+.about_with_avatar p {
+    text-indent: 1.5em;
 }
 
 .standart_block {
+    --padd: 40px;
     padding: 30px;
+    padding-bottom: var(--padd);
     border-radius: 20px;
     background-color: #FFFFFF;
-    margin-bottom: 46px;
+    margin-bottom: 60px;
 }
 
 .standart_block h3 {
@@ -170,9 +190,10 @@ main .about_with_avatar .avatar_wrapper img {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    margin: 0;
+    margin: 10px 0 30px 0;
     padding: 0;
     color: #000000;
+    text-indent: 0;
 }
 
 .standart_block p {
@@ -202,6 +223,10 @@ main .about_with_avatar .avatar_wrapper img {
     padding: 14px 20px;
 }
 
+.education_item .description_item ul {
+    margin-top: 16px;
+}
+
 .education_item .description_item p, 
 .education_item .description_item ul li {
     font-family: 'Inter';
@@ -221,12 +246,24 @@ main .about_with_avatar .avatar_wrapper img {
 }
 
 .contacts_and_skills ul {
-    margin-top: 24px
+    margin-top: 24px;
+    line-height: 24px;
 }
+
 .contacts_and_skills .contacts {
     width: 25%;
-    
 }
+
+.contacts_and_skills .contacts li {
+    font-weight: 400;
+}
+
+.contacts_and_skills .contacts li a:hover {
+    color: #b41515;
+    text-decoration-color: #b41515;
+    text-decoration: underline;
+ 
+ }
 
 .contacts_and_skills .middle_wrapper {
     width: 35%;
@@ -241,7 +278,7 @@ main .about_with_avatar .avatar_wrapper img {
     height: 168px;
     border-radius: 120px 60px 0px 0px;
     background: #F7F7F7;
-    margin-bottom: -30px;
+    margin-bottom: calc(var(--padd) - (var(--padd) * 2));
 }
 
 .contacts_and_skills .middle_wrapper .middle_background::before {
@@ -272,7 +309,7 @@ main .about_with_avatar .avatar_wrapper img {
 
 .contacts_and_skills .middle_wrapper .middle_background img {
    position: relative;
-   margin-top: -30px;
+   margin-top: calc(var(--padd) - (var(--padd) * 2));
 }
 
 .contacts_and_skills .middle_wrapper .middle_background .rounded::before {
@@ -350,7 +387,7 @@ h3 {
     background-color: #6d371b;
 }
 
-.examples .right_block code pre{
+.examples .right_block pre code{
     display: flex;
     height: 80%;
     justify-content: center;
@@ -368,15 +405,23 @@ h3 {
     word-wrap: break-word;
 }
 
-.projects .standart_block {
+.projects .projects_items {
     display: flex;
     justify-content: space-around;
 }
 
-.project .item_project {
+.projects .header_projects {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 30px;
+}
+
+.projects .item_project {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+    padding: 0 10px;
+    width: 30%;
 }
 
 .item_project .title_project {
@@ -384,6 +429,31 @@ h3 {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    padding: 10px;
+
+}
+
+.item_project .title_project:hover {
+    width: 80%;
+    border-radius: 20px;
+    padding: 10px;
+    color: #38914f;
+    background-color: #F7F7F7;
+}
+
+.item_project .img_project {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    border: solid 1px #f2f2f2;
+}
+
+.item_project .img_project img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
 }
 
 .title_project strong {
@@ -401,4 +471,57 @@ h3 {
     font-style: normal;
     font-size: 14px;
     line-height: 18px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 34px;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono';
+    font-size: 12px;
+    font-weight: 300;
+    border-radius: 20px 20px 0 0;
+    color: #FFFFFF;
+    background-color: #444444;
+}
+
+footer .course {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1
+
+}
+
+footer a {
+    text-align: right;
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .git_hub_dev {
+    display: flex;
+    align-items: center;
+    flex: 1
+}
+
+footer .git_hub_dev img {
+    width: 1em;
+    height: 1em;
+    padding-right: 4px;
+}
+
+footer .year {
+    display: flex;
+    flex: 1;
+    justify-content: center;
 }

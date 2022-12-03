@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +12,6 @@
         rel="stylesheet">
     <title>CV Project</title>
 </head>
-
 <body>
     <header>
         <nav>
@@ -52,11 +50,12 @@
             <div class="about_with_avatar">
                 <div class="avatar_wrapper">
                     <img src="img/avatar.jpg" width="134" height="134" alt="avatar">
+                    <span>&lt;duxcoder&gt;</span>
                 </div>
                 <div class="standart_block">
                     <h3>Brief information about yourself</h3>
                     <p>
-                        My IT history begins in 2010, when I was 13 years old,me and my friends in my spare time from
+                        My IT history begins in 2010, when I was 13 years old, me and my friends in my spare time from
                         school created sites on the CMS DataLife Engine, these were entertainment sites and soft
                         portals, and after that I swung at the ВНароде social network, of course, all these projects did
                         not last long and were of mediocre quality, but they laid the foundation for my web education.
@@ -65,7 +64,10 @@
                         After that, I often returned to this craft, created a site for my college on WordPress, and
                         dealt with WordPress sites as a part-time job at the university, and since 2021 I decided to
                         leave engineering, which I was not bad at, and to thoroughly study what has fascinated me since
-                        childhood, this is web development. Coming home from work, every day I studied HTML, then CSS,
+                        childhood, this is web development. 
+                    </p>
+                    <p>
+                        Coming home from work, every day I studied HTML, then CSS,
                         JavaScript and finally React. The field of web development turned out to be bottomless, but step
                         by step, getting the result, I will move on and will definitely become a sought-after
                         specialist.
@@ -192,58 +194,78 @@
                     <p>Your task is to write a function that takes a string and return a new string with all vowels
                         removed.</p>
                     <p>For example, the string “This website is for losers LOL!” would become “Ths wbst s fr lsrs LL!”.</p>
-                    
                 </div>
                 <div class="right_block">
                     <h4>My solution</h4>
-                    <code>
-                        <pre>
+                    <pre>
+                        <code>
 const disemvowel = (str) => { 
     const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']; 
             return str.split('').reduce((newStr, item) => { 
                 return newStr += vowels.every(vowel => 
     vowel !== item) ? item : '' }, '');
 }                             
-                        </pre>
-                    </code>
+                        </code>
+                    </pre>
                 </div>
             </div>
         </section>
         <section class="projects">
             <h3>Projects</h3>
             <div class="standart_block">
-                <div class="item_project">
-                    <div class="img_project">
-                        <img src="img/projects/sortcalc.png" alt="SortCalc Project" width="340" height="200">
-                    </div>
-                    <a href="/" class="title_project">
-                        <strong>SortCalc</strong>
-                        <p>(rolled metal calculator)</p>
-                    </a>
+                <div class="header_projects">
+                    <h4>Projects created in the learning process (written not by dictation, but by myself)</h4>
                 </div>
-                <div class="item_project">
-                    <div class="img_project">
-                        <img src="img/projects/fooddelivery.png" alt="Food-Delivery" width="340" height="200">
+                <div class="projects_items">
+                    <div class="item_project">
+                        <div class="img_project">
+                            <img src="img/projects/sortcalc.png" alt="SortCalc Project" width="340" height="200">
+                        </div>
+                        <a href="/" class="title_project">
+                            <strong>SortCalc</strong>
+                            <p>(rolled metal calculator)</p>
+                        </a>
                     </div>
-                    <a href="/" class="title_project">
-                        <strong>Food-delivery</strong>
-                        <p>(project for learning ReactJs)</p>
-                    </a>
-                </div>
-                <div class="item_project">
-                    <div class="img_project">
-                        <img src="img/projects/snake.png" alt="Snake" width="340" height="200">
+                    <div class="item_project">
+                        <div class="img_project">
+                            <img src="img/projects/fooddelivery.png" alt="Food-Delivery" width="340" height="200">
+                        </div>
+                        <a href="/" class="title_project">
+                            <strong>Food-delivery</strong>
+                            <p>(project for learning ReactJs)</p>
+                        </a>
                     </div>
-                    <a href="/" class="title_project">
-                        <strong>Snakey</strong>
-                        <p>(simple game on native JS)</p>
-                    </a>
+                    <div class="item_project">
+                        <div class="img_project">
+                            <img src="img/projects/snake.png" alt="Snake" width="340" height="200">
+                        </div>
+                        <a href="/" class="title_project">
+                            <strong>Snakey</strong>
+                            <p>(simple game on native JS)</p>
+                        </a>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <section class="english">
+            <div class="standart_block">
+                <h3>English Language</h3>
+                A2, but i use google translate
             </div>
         </section>
     </main>
     <footer>
+        <div class="git_hub_dev">
+            <img src="img/icons/github.svg" alt="GitHub Icon"> 
+            <a href="https://github.com/Duxcoder">DUXCODER</a>
+        </div>
+        <div class="year">
+            &copy; 2022
+        </div>
+        <div class="course">
+            <span>Course «JavaScript/Front-end»</span>
+            <a href="https://rs.school/js/">The Rolling Scopes</a>            
+        </div>
     </footer>
 </body>
-
 </html>
