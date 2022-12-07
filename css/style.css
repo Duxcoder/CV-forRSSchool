@@ -48,6 +48,10 @@ address {
     padding: 0 15px;
 }
 
+header .hamburger {
+    display: none;
+}
+
 header {
     position: relative;
     display: flex;
@@ -616,6 +620,23 @@ footer .year span {
         max-width: 540px;
     }
 
+    header .hamburger {
+        display: flex;
+        margin-top: 20px;
+        width: calc(100vw - 80px);
+        justify-content: flex-end;
+    }
+    
+
+    header .hamburger img {
+        width: 40px;
+        height: 40px;
+    }
+
+    header nav {
+        display: none;
+    }
+
     header h1 {
         font-size: 50px;
     }
@@ -666,6 +687,18 @@ footer .year span {
 @media screen and (max-width: 575px){
     .container {
         width: 100%;
+    }
+
+    header .hamburger {
+        display: flex;
+        margin-top: 20px;
+        width: calc(100vw - 80px);
+        justify-content: flex-end;
+    }
+    
+    header .hamburger img {
+        width: 40px;
+        height: 40px;
     }
 
     header nav {
