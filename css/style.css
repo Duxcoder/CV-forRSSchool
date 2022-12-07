@@ -100,6 +100,23 @@ header nav ul li a:hover {
     color: #FFFFFF;
 }
 
+header nav.view-mobile ul {
+    flex-direction: column;
+    padding: 0;
+}
+
+header nav.view-mobile ul li a {
+    font-size: 18px;
+    line-height: 44px;
+}
+
+header nav.view-mobile ul li a:hover {
+    border-radius: 0;
+    border-bottom: solid 1px #5C3D2C;
+    background: none;
+    color: #000000;
+}
+
 header h1 {
     text-align: center;
     font-family: 'Inter';
@@ -627,14 +644,23 @@ footer .year span {
         justify-content: flex-end;
     }
     
-
     header .hamburger img {
-        width: 40px;
-        height: 40px;
+        width: 68px;
+        height: 68px;
     }
 
     header nav {
         display: none;
+    }
+
+    header nav.view-mobile {
+        display: block;
+        width: 100vw;
+        height: auto;
+        align-items: center;
+        margin: 30px 0;
+        padding: 0;
+        background: none;
     }
 
     header h1 {
@@ -697,12 +723,22 @@ footer .year span {
     }
     
     header .hamburger img {
-        width: 40px;
-        height: 40px;
+        width: 68px;
+        height: 68px;
     }
 
     header nav {
         display: none;
+    }
+
+    header nav.view-mobile {
+        display: block;
+        width: 100vw;
+        height: auto;
+        align-items: center;
+        margin: 30px 0;
+        padding: 0;
+        background: none;
     }
 
     main .about_section .cloud_wrapper {
@@ -718,6 +754,7 @@ footer .year span {
     main .about_with_avatar .avatar_wrapper img {
         width: 260px;
         height: 260px;
+        margin-bottom: 30px;
     }
 
     .standart_block .education_items_wrapper {
