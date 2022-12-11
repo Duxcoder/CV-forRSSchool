@@ -252,6 +252,9 @@ main .about_with_avatar .avatar_wrapper img {
     padding: 14px 20px;
 }
 
+.education_item .description_item h4 {
+    text-align: left;
+}
 .education_item .description_item ul {
     margin-top: 16px;
 }
