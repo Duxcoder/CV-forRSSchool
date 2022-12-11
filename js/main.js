@@ -12,3 +12,5 @@ function hamburgerMenu () {
 }
 
 hamburgerMenu()
+
+console.log('Score: "120/120"')
